@@ -7,15 +7,14 @@ public class ColliderScript : MonoBehaviour
     [SerializeField] MazePlayerManager PlayerManager;
     [SerializeField] ScoreTextScript ScoreText;
     public bool isColliding = false;
-    public int totalScore;
     public bool IsColliding
     {
         get { return isColliding; }
         set { 
                 if (!value) 
                 {
-                    totalScore++;
                     PlayerManager.SlicedSpawn();
+                    PlayerManager.dragGameScore++;
                 }
                 isColliding = value; 
             }

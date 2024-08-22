@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using KanKikuchi.AudioManager;
 
 public class MazePlayerManager : MonoBehaviour
 {
     [SerializeField] private Sprite[] playerSprits;
     [SerializeField] private GameObject[] slicedObjects;
+    [SerializeField] private GManager gManager;
+    [SerializeField] private int nextStageIndex = 2;
+    public int dragGameScore = 0;
     public int nowVegetableNum = 0;
     // Update is called once per frame
     void Update()
@@ -25,6 +29,14 @@ public class MazePlayerManager : MonoBehaviour
 
     public void SlicedSpawn()
     {
+        SEManager.Instance.Play(SEPath.SLICED);
         Instantiate(slicedObjects[nowVegetableNum], new Vector2(this.transform.position.x,0), Quaternion.identity);
+    }
+
+    public void GameFinish()
+    {
+        gManager.SetDragGameScore(dragGameScore);
+        gManager.stageIndex = nextStageIndex;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("StageRandomSelect");
     }
 }
