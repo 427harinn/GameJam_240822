@@ -29,8 +29,7 @@ public class StageRandomSelect : MonoBehaviour
             SceneManager.LoadScene("GameClear");
         }
 
-        GManager.instance.stageIndex++;
-        SceneManager.LoadScene(stageName[GManager.instance.stageIndex]);
+        SceneManager.LoadScene(stageName[GManager.instance.stageIndex++]);
         
     }
 
