@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using KanKikuchi.AudioManager;
 
 public class MazePlayerManager : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class MazePlayerManager : MonoBehaviour
 
     public void SlicedSpawn()
     {
+        SEManager.Instance.Play(SEPath.SLICED);
         Instantiate(slicedObjects[nowVegetableNum], new Vector2(this.transform.position.x,0), Quaternion.identity);
     }
 
