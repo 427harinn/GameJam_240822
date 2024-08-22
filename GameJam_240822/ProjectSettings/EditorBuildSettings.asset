@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/tobakuro/CutSelect.unity
+    guid: 832cf51c0a569eb4281a6de9296cf8c3
+  - enabled: 1
+    path: Assets/Scenes/tobakuro/middleSelect.unity
+    guid: a2f808dad332b66448c2b9629d647927
+  - enabled: 1
+    path: Assets/Scenes/tobakuro/TopSelect.unity
+    guid: b01ef2eb9b88e604b9927fc30a3d44ca
+  - enabled: 1
+    path: Assets/Scenes/tobakuro2/Result.unity
+    guid: 0cecbaba28ce87a4f88e14734137ac9a
   m_configObjects: {}

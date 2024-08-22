@@ -10,9 +10,9 @@ public class GManager : MonoBehaviour
 
     public int totalScore;
 
-    public int select1 = 0;
-    public int select2 = 0;
-    public int select3 = 0;
+    public string select1 = "";
+    public string select2 = "";
+    public string select3 = "";
 
     public int mixScore = 0;
     public int stageIndex = -1;  //�����_���Z���N�g���̃X�e�[�W�ԍ�, StageRandomSelect�Ŏg�p
