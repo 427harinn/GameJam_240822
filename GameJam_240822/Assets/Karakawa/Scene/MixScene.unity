@@ -641,7 +641,7 @@ PrefabInstance:
       objectReference: {fileID: 1454642770}
     - target: {fileID: 155387325099736788, guid: 368adb13243734205b678d8389ae08e8, type: 3}
       propertyPath: moveInterval
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2948882794080704017, guid: 368adb13243734205b678d8389ae08e8, type: 3}
       propertyPath: m_RaycastTarget
@@ -1237,7 +1237,7 @@ PrefabInstance:
       objectReference: {fileID: 1454642770}
     - target: {fileID: 155387325099736788, guid: 368adb13243734205b678d8389ae08e8, type: 3}
       propertyPath: moveInterval
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4142762248217789721, guid: 368adb13243734205b678d8389ae08e8, type: 3}
       propertyPath: m_Name
@@ -1856,7 +1856,7 @@ PrefabInstance:
       objectReference: {fileID: 1454642770}
     - target: {fileID: 155387325099736788, guid: 368adb13243734205b678d8389ae08e8, type: 3}
       propertyPath: moveInterval
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4142762248217789721, guid: 368adb13243734205b678d8389ae08e8, type: 3}
       propertyPath: m_Name

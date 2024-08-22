@@ -11,7 +11,7 @@ public class HitScript : MonoBehaviour
 
     private int count = 0;
     private float timeSinceLastMovement = 0f; // 最後の動きからの経過時間
-    public float movementTimeout = 1f; // 動いていないと判断するまでの時間（秒）
+    public float movementTimeout = 0.5f; // 動いていないと判断するまでの時間（秒）
 
     void Update()
     {

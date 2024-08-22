@@ -3,15 +3,15 @@ using UnityEngine;
 public class RandomMovement : MonoBehaviour
 {
     public Transform centerObject; // 赤い丸の中心
-    public float radius = 6f; // 赤い丸の半径
-    public float moveInterval; // 四角形が移動する時間間隔（秒）
+    public float radius = 3f; // 赤い丸の半径
+    public float moveInterval = 0.5f; // 四角形が移動する時間間隔（秒）
 
     private float timer = 0f;
     public HitScript hitScript; // HitScript への参照
 
     void Start()
     {
-        moveInterval = 0f + Random.Range(0.3f, 1.5f);
+        moveInterval = 0f + Random.Range(0.3f, 1f);
     }
 
     void Update()
