@@ -8,33 +8,33 @@ public class SceneChanger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
-    
+
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void LoadSceneA()
     {
-        SceneManager.LoadScene("SceneA");
-        GManager.instance.select1 = 1;
-        
+        SceneManager.LoadScene("TopSelect");
+        GManager.instance.select1 = "cabbage";
+
     }
 
     public void LoadSceneB()
     {
-        SceneManager.LoadScene("SceneA");
-        GManager.instance.select1 = 2;
+        SceneManager.LoadScene("TopSelect");
+        GManager.instance.select1 = "onion";
 
     }
 
     public void LoadSceneC()
     {
-        SceneManager.LoadScene("SceneA");
-        GManager.instance.select1 = 3;
+        SceneManager.LoadScene("TopSelect");
+        GManager.instance.select1 = "potato";
 
     }
 
