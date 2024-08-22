@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TimerScript : MonoBehaviour
 {
+    [SerializeField] GameObject finish;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,6 @@ public class TimerScript : MonoBehaviour
 
     public void Timer()
     {
-        SceneManager.LoadScene("SampleScene");
+        finish.SetActive(true);
     }
 }
