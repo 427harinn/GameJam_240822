@@ -11,12 +11,11 @@ public class ScoreTextScript : MonoBehaviour
     public int TotalScoreUI
     {
         get { return totalScoreUI; }
-        set { totalScoreUI = value; text.text = totalScoreUI.ToString(); }
+        set { totalScoreUI = value; }
     }
     void Start()
     {
         text = GetComponent<Text>();
-        text.text = "0";
     }
 
     // Update is called once per frame

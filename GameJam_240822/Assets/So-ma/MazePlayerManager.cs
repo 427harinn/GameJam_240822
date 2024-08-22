@@ -19,7 +19,7 @@ public class MazePlayerManager : MonoBehaviour
     }
     void Start()
     {
-        Image imageComponent = this.GetComponent<Image>();
+        SpriteRenderer imageComponent = this.GetComponent<SpriteRenderer>();
         imageComponent.sprite= playerSprits[nowVegetableNum];
     }
 

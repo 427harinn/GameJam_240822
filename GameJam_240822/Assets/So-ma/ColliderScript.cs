@@ -15,7 +15,6 @@ public class ColliderScript : MonoBehaviour
                 if (!value) 
                 {
                     totalScore++;
-                    ScoreText.TotalScoreUI = totalScore;
                     PlayerManager.SlicedSpawn();
                 }
                 isColliding = value; 
