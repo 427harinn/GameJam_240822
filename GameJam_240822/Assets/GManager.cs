@@ -9,7 +9,9 @@ public class GManager : MonoBehaviour
 
     public int totalScore;
 
-    public int stageIndex = -1;  //ƒ‰ƒ“ƒ_ƒ€ƒZƒŒƒNƒg‚ÌƒXƒe[ƒW”Ô†, StageRandomSelect‚Åg—p
+    public int mixScore = 0;
+
+    public int stageIndex = -1;  //ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½Nï¿½gï¿½ï¿½ï¿½ÌƒXï¿½eï¿½[ï¿½Wï¿½Ôï¿½, StageRandomSelectï¿½Ågï¿½p
 
     private void Awake()
     {

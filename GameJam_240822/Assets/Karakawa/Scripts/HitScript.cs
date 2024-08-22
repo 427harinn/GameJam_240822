@@ -15,7 +15,18 @@ public class HitScript : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("count:" + count);
+        if (count > 13)
+        {
+            GManager.instance.mixScore = 30;
+        }
+        else if (count > 10)
+        {
+            GManager.instance.mixScore = 20;
+        }
+        else if (count > 5)
+        {
+            GManager.instance.mixScore = 10;
+        }
 
         // 動いている場合、時間を更新
         if (isMoving)
