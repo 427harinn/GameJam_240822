@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using KanKikuchi.AudioManager;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -35,5 +36,9 @@ public class GManager : MonoBehaviour
     public void SetDragGameScore(int score)
     {
         DragGameScore = score;
+    }
+    private void Start()
+    {
+        BGMManager.Instance.Play(BGMPath.OPENING_BGM);
     }
 }
