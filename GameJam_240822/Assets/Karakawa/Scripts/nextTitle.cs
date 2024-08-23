@@ -19,6 +19,9 @@ public class nextTitle : MonoBehaviour
 
     public void onClicked()
     {
+        GManager.instance.DragGameScore = 0;
+        GManager.instance.mixScore = 0;
+        GManager.instance.clickScore = 0;
         SceneManager.LoadScene("StartScene");
     }
 }
