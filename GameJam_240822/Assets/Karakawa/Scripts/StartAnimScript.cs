@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class StartAnimScript : MonoBehaviour
 {
+    [SerializeField] GameObject timer;
+    [SerializeField] GameObject startactiveobj;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,8 @@ public class StartAnimScript : MonoBehaviour
 
     public void StartAnimFinish()
     {
+        startactiveobj.SetActive(true);
+        timer.SetActive(true);
         Destroy(this.gameObject.transform.parent.gameObject);
     }
 }
