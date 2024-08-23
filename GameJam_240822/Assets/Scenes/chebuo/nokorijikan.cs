@@ -26,7 +26,7 @@ public class nokorijikan : MonoBehaviour
         text.text = Mathf.Ceil(countdown).ToString();
         if (countdown<=0)
         {
-            SceneManager.LoadScene("nextScene");
+            //SceneManager.LoadScene("nextScene");
         }
     }
 }
