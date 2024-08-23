@@ -10,6 +10,8 @@ public class GManager : MonoBehaviour
     public static GManager instance = null;
     [SerializeField] private GameObject startObject;
 
+    [SerializeField] private GameObject timerObject;
+
 
     public int totalScore;
     //max904
@@ -42,7 +44,6 @@ public class GManager : MonoBehaviour
     }
     private void Start()
     {
-        BGMManager.Instance.Play(BGMPath.OPENING_BGM);
     }
 
     public void GameStart()
@@ -59,4 +60,5 @@ public class GManager : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         Instantiate(startObject, new Vector2(0, 0), Quaternion.identity);
     }
+
 }
