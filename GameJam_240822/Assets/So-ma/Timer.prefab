@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5367167186501430864}
   - component: {fileID: 6020688291622146362}
   m_Layer: 5
-  m_Name: "\u30AB\u30A6\u30F3\u30C8\u30C0\u30A6\u30F3"
+  m_Name: Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ RectTransform:
   m_GameObject: {fileID: 96147744546621744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 54, y: 54, z: 54}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7697913493556820526}

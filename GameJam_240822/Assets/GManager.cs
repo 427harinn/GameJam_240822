@@ -43,7 +43,6 @@ public class GManager : MonoBehaviour
     }
     private void Start()
     {
-        BGMManager.Instance.Play(BGMPath.OPENING_BGM);
     }
 
     public void GameStart()

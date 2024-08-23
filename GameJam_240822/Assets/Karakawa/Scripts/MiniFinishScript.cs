@@ -15,6 +15,7 @@ public class MiniFinishScript : MonoBehaviour
     {
         SEManager.Instance.Play(SEPath.TIN);
         BGMManager.Instance.Stop();
+        if(finishInactiveobjects.Length == 0) return;
         foreach (GameObject finishInactiveobj in finishInactiveobjects)
         {
             finishInactiveobj.SetActive(false);

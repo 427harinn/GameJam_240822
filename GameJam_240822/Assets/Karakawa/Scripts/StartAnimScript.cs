@@ -6,8 +6,8 @@ using KanKikuchi.AudioManager;
 public class StartAnimScript : MonoBehaviour
 {
     [SerializeField] private GameObject timer;
-    [SerializeField] private GameObject startactiveobj;
-    [SerializeField] private float startSEWaitSeconds = 2.0f;
+    [SerializeField] private GameObject[] startactiveobjects;
+    [SerializeField] private float startSEWaitSeconds = 1.4f;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +29,13 @@ public class StartAnimScript : MonoBehaviour
 
     public void StartAnimFinish()
     {
-        startactiveobj.SetActive(true);
+        if (startactiveobjects.Length != 0)
+        {
+            foreach (GameObject startactiveobject in startactiveobjects)
+            {
+                startactiveobject.SetActive(true);
+            }
+        }
         timer.SetActive(true);
         Destroy(this.gameObject.transform.parent.gameObject);
     }
