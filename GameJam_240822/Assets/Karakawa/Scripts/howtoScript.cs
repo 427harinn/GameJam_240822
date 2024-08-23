@@ -10,7 +10,7 @@ public class howtoScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        discriptions[0].SetActive(true);
     }
 
     // Update is called once per frame
@@ -22,6 +22,7 @@ public class howtoScript : MonoBehaviour
     public void onClicked_how()
     {
         howobj.SetActive(true);
+        discriptions[0].SetActive(true);
     }
 
     public void onClicked_nextobj()
@@ -32,6 +33,8 @@ public class howtoScript : MonoBehaviour
             if (count != 0)
             {
                 discriptions[count - 1].SetActive(false);
+            }else if(count == 0){
+                discriptions[0].SetActive(true);
             }
         }
         else
@@ -46,11 +49,12 @@ public class howtoScript : MonoBehaviour
 
     public void onClicked_closebutton()
     {
-        discriptions[0].SetActive(true);
         if (count != 0)
         {
             discriptions[count - 1].SetActive(false);
-        }
+        }else if(count == 0){
+                discriptions[0].SetActive(false);
+            }
 
         count = 1;
         howobj.SetActive(false);
