@@ -6,25 +6,16 @@ public class ColliderScript : MonoBehaviour
 {
     [SerializeField] MazePlayerManager PlayerManager;
     [SerializeField] ScoreTextScript ScoreText;
-    public bool isColliding = false;
-    public bool IsColliding
-    {
-        get { return isColliding; }
-        set { 
-                if (!value) 
-                {
-                    PlayerManager.SlicedSpawn();
-                    PlayerManager.dragGameScore++;
-                }
-                isColliding = value; 
-            }
-    }
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        IsColliding = true;
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        IsColliding = false;
+        if(PlayerManager.upVelocity)
+        {
+            PlayerManager.SlicedSpawn();
+            PlayerManager.dragGameScore++;
+        }
     }
 }

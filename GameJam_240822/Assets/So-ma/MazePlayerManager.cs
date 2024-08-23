@@ -10,8 +10,12 @@ public class MazePlayerManager : MonoBehaviour
     [SerializeField] private GameObject[] slicedObjects;
     [SerializeField] private GManager gManager;
     [SerializeField] private int nextStageIndex = 2;
+    public bool upVelocity = false;
     public int dragGameScore = 0;
     public int nowVegetableNum = 0;
+    private Rigidbody2D rb;
+    private float loc;
+    private float beforeLoc;
     // Update is called once per frame
     void Update()
     {
@@ -20,10 +24,21 @@ public class MazePlayerManager : MonoBehaviour
             Vector3 mousePos = Input.mousePosition;
             this.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 8));
         }
+        loc = this.transform.position.y; 
+        if(beforeLoc > loc)
+        {
+            upVelocity = false;
+        }
+        if(beforeLoc < loc)
+        {
+            upVelocity = true;
+        }
+        beforeLoc = this.transform.position.y;
     }
     void Start()
     {
         SpriteRenderer imageComponent = this.GetComponent<SpriteRenderer>();
+        rb = this.GetComponent<Rigidbody2D>();
         imageComponent.sprite= playerSprits[nowVegetableNum];
     }
 

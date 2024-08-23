@@ -44,3 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45127348947f6b34fb924ba11dd7a15f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startObject: {fileID: 1096274702263144535, guid: 8b8ebf17acbd547f080ca5d452827c82, type: 3}
+  totalScore: 0
+  DragGameScore: 0
+  select1: 
+  select2: 
+  select3: 
+  mixScore: 0
+  stageIndex: -1
