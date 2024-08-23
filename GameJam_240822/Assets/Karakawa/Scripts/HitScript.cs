@@ -65,6 +65,7 @@ public class HitScript : MonoBehaviour
         }
         else if (other.gameObject == judgeobj[3] && ordercount == 3)
         {
+            this.gameObject.GetComponent<AudioSource>().PlayOneShot(this.gameObject.GetComponent<AudioSource>().clip);
             ordercount = 0;
             count++;
             isMoving = false; // しゃもじが動き終わったと判定

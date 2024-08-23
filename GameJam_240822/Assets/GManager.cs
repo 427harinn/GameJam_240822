@@ -8,11 +8,12 @@ using UnityEngine.Audio;
 public class GManager : MonoBehaviour
 {
     public static GManager instance = null;
-    
+
     public int totalScore;
     //max904
     public int DragGameScore;
 
+    public int clickScore;
     public string select1 = "";
     public string select2 = "";
     public string select3 = "";
