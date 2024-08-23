@@ -16,14 +16,14 @@ public class nokorijikan : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        text= gameObject.GetComponent<Text>();
+        text = gameObject.GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
         countdown = countdown - Time.deltaTime;
-        if(nowRotZ <= 360)
+        if (nowRotZ <= 360)
         {
             //SceneManager.LoadScene("nextScene");
             float rotationThisFrame = rotationSpeed * Time.deltaTime; // 今フレームでの回転角度
@@ -31,7 +31,7 @@ public class nokorijikan : MonoBehaviour
             nowRotZ += rotationThisFrame; // 累積回転角度を更新（必要なら）
             HariObject.transform.Rotate(0, 0, -rotationThisFrame); // 毎フレームの回転角度を適用
         }
-        
+
 
         // テキストやカウントダウンの処理
         text.text = Mathf.Ceil(countdown).ToString();

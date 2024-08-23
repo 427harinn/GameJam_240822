@@ -15,15 +15,15 @@ public class HitScript : MonoBehaviour
 
     void Update()
     {
-        if (count > 13)
+        if (count > 10)
         {
             GManager.instance.mixScore = 30;
         }
-        else if (count > 10)
+        else if (count > 5)
         {
             GManager.instance.mixScore = 20;
         }
-        else if (count > 5)
+        else if (count > 3)
         {
             GManager.instance.mixScore = 10;
         }

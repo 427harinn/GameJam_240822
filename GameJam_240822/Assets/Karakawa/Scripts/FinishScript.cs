@@ -31,7 +31,7 @@ public class FinishScript : MonoBehaviour
             starobj[1].sprite = nullStar;
             starobj[2].sprite = nullStar;
         }
-        else if (finishscore <= 60)
+        else if (finishscore <= 50)
         {
             starobj[2].sprite = nullStar;
         }
