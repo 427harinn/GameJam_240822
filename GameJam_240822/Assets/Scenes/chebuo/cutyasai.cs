@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class cutyasai : MonoBehaviour
 {
-    public int maxmouseclick = 10;
+    //public int maxmouseclick = 10;
     public int mouseclick = 0;
     public bool onClick;
     // Start is called before the first frame update
@@ -22,7 +22,7 @@ public class cutyasai : MonoBehaviour
     public void OnClick()
     {
         mouseclick++;
-        //Debug.Log(mouseclick);
+        Debug.Log(mouseclick);
     }
     public void OnButtonDown()
     {

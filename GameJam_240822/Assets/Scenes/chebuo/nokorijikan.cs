@@ -25,6 +25,7 @@ public class nokorijikan : MonoBehaviour
         countdown = countdown - Time.deltaTime;
         if(nowRotZ <= 360)
         {
+            //SceneManager.LoadScene("nextScene");
             float rotationThisFrame = rotationSpeed * Time.deltaTime; // 今フレームでの回転角度
 
             nowRotZ += rotationThisFrame; // 累積回転角度を更新（必要なら）
