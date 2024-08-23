@@ -949,6 +949,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: finishImage
       objectReference: {fileID: 0}
+    - target: {fileID: 5867199598660597430, guid: 79a0613b4945043da8c617e61f5ba90b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6251428076540397368, guid: 79a0613b4945043da8c617e61f5ba90b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8098776125444295501, guid: 79a0613b4945043da8c617e61f5ba90b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
