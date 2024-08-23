@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using KanKikuchi.AudioManager;
 
 public class cutyasai : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class cutyasai : MonoBehaviour
     public void OnButtonDown()
     {
         Debug.Log("‰Ÿ‚³‚ê‚Ä‚é");
+        SEManager.Instance.Play(SEPath.CUTTING);
         onClick = true;
     }
     public void OnButtonUp()

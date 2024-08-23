@@ -5,6 +5,7 @@
 /// </summary>
 public static class SEPath{
 
+	public const string CUTTING  = "SE/cutting";
 	public const string JINGLE10 = "SE/Jingle/jingle10";
 	public const string SLICED   = "SE/sliced";
 	public const string START_SE = "SE/StartSE";
