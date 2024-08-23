@@ -9,6 +9,8 @@ public class RotateWithMouse : MonoBehaviour
     private Vector3 initialShamojiPosition; // しゃもじの初期位置
     private Quaternion initialCenterRotation; // センターオブジェクトの初期回転
 
+    [SerializeField] GameObject circle;
+
     void Start()
     {
         // 初期位置と回転を保存
@@ -38,6 +40,7 @@ public class RotateWithMouse : MonoBehaviour
 
     public void OnMouseDown()
     {
+        circle.SetActive(false);
         // ドラッグを開始
         isDragging = true;
     }
