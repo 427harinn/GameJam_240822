@@ -40,6 +40,9 @@ public class MazePlayerManager : MonoBehaviour
     }
     void Start()
     {
+        if(GManager.instance.select2 == "carrot") nowVegetableNum = 1;
+        if(GManager.instance.select2 == "cucumber") nowVegetableNum = 0;
+        if(GManager.instance.select2 == "radish") nowVegetableNum = 2;
         SpriteRenderer imageComponent = this.GetComponent<SpriteRenderer>();
         rb = this.GetComponent<Rigidbody2D>();
         imageComponent.sprite= playerSprits[nowVegetableNum];
