@@ -16,6 +16,7 @@ public class ColliderScript : MonoBehaviour
         {
             PlayerManager.SlicedSpawn();
             PlayerManager.dragGameScore++;
+            GManager.instance.DragGameScore++;
         }
     }
 }
