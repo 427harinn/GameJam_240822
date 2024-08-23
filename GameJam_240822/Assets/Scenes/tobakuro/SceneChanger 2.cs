@@ -19,21 +19,21 @@ public class SceneChanger2 : MonoBehaviour
 
     public void LoadSceneA()
     {
-        SceneManager.LoadScene("middleSelect");
+        SceneManager.LoadScene("MixScene");
         GManager.instance.select3 = "tomato";
 
     }
 
     public void LoadSceneB()
     {
-        SceneManager.LoadScene("middleSelect");
+        SceneManager.LoadScene("MixScene");
         GManager.instance.select3 = "cheese";
 
     }
 
     public void LoadSceneC()
     {
-        SceneManager.LoadScene("middleSelect");
+        SceneManager.LoadScene("MixScene");
         GManager.instance.select3 = "corn";
 
     }

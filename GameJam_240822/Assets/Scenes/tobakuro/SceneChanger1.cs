@@ -19,20 +19,20 @@ public class SceneChanger1 : MonoBehaviour
 
     public void LoadSceneA()
     {
-        SceneManager.LoadScene("Result");
+        SceneManager.LoadScene("DragGameScene1");
         GManager.instance.select2 = "radish";
 
     }
 
     public void LoadSceneB()
     {
-        SceneManager.LoadScene("Result");
+        SceneManager.LoadScene("DragGameScene1");
         GManager.instance.select2 = "cucumber";
     }
 
     public void LoadSceneC()
     {
-        SceneManager.LoadScene("Result");
+        SceneManager.LoadScene("DragGameScene1");
         GManager.instance.select2 = "carrot";
 
     }

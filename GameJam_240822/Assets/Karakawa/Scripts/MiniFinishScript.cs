@@ -9,6 +9,7 @@ public class MiniFinishScript : MonoBehaviour
 {
     [SerializeField] GameObject nextbutton;
     [SerializeField] GameObject[] finishInactiveobjects;
+    GameObject finishInactiveobj;
     [SerializeField] string sceneName;
     // Start is called before the first frame update
     void Start()

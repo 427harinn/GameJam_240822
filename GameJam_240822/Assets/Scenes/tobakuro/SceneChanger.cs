@@ -19,21 +19,21 @@ public class SceneChanger : MonoBehaviour
 
     public void LoadSceneA()
     {
-        SceneManager.LoadScene("TopSelect");
+        SceneManager.LoadScene("chebuo");
         GManager.instance.select1 = "cabbage";
 
     }
 
     public void LoadSceneB()
     {
-        SceneManager.LoadScene("TopSelect");
+        SceneManager.LoadScene("chebuo");
         GManager.instance.select1 = "onion";
 
     }
 
     public void LoadSceneC()
     {
-        SceneManager.LoadScene("TopSelect");
+        SceneManager.LoadScene("chebuo");
         GManager.instance.select1 = "potato";
 
     }
