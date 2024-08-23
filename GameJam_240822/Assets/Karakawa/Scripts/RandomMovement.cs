@@ -11,7 +11,7 @@ public class RandomMovement : MonoBehaviour
 
     void Start()
     {
-        moveInterval = 0f + Random.Range(0.3f, 1f);
+        moveInterval = 0f + Random.Range(0.3f, 0.8f);
     }
 
     void Update()
@@ -26,7 +26,7 @@ public class RandomMovement : MonoBehaviour
             if (timer >= moveInterval)
             {
                 MoveToRandomPosition();
-                moveInterval = 0f + Random.Range(0.3f, 1f);
+                moveInterval = 0f + Random.Range(0.1f, 1f);
                 timer = 0f; // タイマーをリセット
             }
         }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class yasaitati : MonoBehaviour
 {
-    [SerializeField]private Image yasai;
+    [SerializeField] private Image yasai;
     public Sprite[] yasais;
     [SerializeField] private Image yasaicut;
     public Sprite[] yasaiscut;
@@ -15,37 +15,40 @@ public class yasaitati : MonoBehaviour
     void Start()
     {
         CutYasai = GetComponent<cutyasai>();
-        GameObject obj = GameObject.Find("˜A‘Å");
+        GameObject obj = GameObject.Find("Renda");
         CutYasai = obj.GetComponent<cutyasai>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        click=CutYasai.mouseclick;
+        click = CutYasai.mouseclick;
         Debug.Log(click);
         if (CutYasai.mouseclick >= 0 && CutYasai.mouseclick < 20)
         {
-            yasai.sprite=yasais[0];
-            if(CutYasai.onClick)
+            GManager.instance.clickScore = 10;
+            yasai.sprite = yasais[0];
+            if (CutYasai.onClick)
             {
-                yasaicut.sprite=yasaiscut[0];
+                yasaicut.sprite = yasaiscut[0];
             }
         }
         if (CutYasai.mouseclick >= 20 && CutYasai.mouseclick < 40)
         {
-            yasai.sprite=yasais[1];
-            if(CutYasai.onClick)
+            GManager.instance.clickScore = 20;
+            yasai.sprite = yasais[1];
+            if (CutYasai.onClick)
             {
-                yasaicut.sprite =yasaiscut[1];
+                yasaicut.sprite = yasaiscut[1];
             }
         }
         if (click >= 40)
         {
-            yasai.sprite=yasais[2];
-            if(CutYasai.onClick)
+            GManager.instance.clickScore = 30;
+            yasai.sprite = yasais[2];
+            if (CutYasai.onClick)
             {
-                yasaicut.sprite =yasaiscut[2];
+                yasaicut.sprite = yasaiscut[2];
             }
         }
     }

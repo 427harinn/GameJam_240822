@@ -20,7 +20,11 @@ public class MiniFinishScript : MonoBehaviour
     }
     public void AnimFinish()
     {
-        finishInactiveobj.SetActive(false);
+        if (finishInactiveobj != null)
+        {
+            finishInactiveobj.SetActive(false);
+        }
+
         nextbutton.SetActive(true);
     }
 }

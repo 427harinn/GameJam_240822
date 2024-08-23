@@ -20,7 +20,11 @@ public class StartAnimScript : MonoBehaviour
 
     public void StartAnimFinish()
     {
-        startactiveobj.SetActive(true);
+        if (startactiveobj != null)
+        {
+            startactiveobj.SetActive(true);
+        }
+
         timer.SetActive(true);
         Destroy(this.gameObject.transform.parent.gameObject);
     }

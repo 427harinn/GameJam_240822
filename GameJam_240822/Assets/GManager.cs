@@ -9,7 +9,7 @@ public class GManager : MonoBehaviour
 {
     public static GManager instance = null;
     [SerializeField] private GameObject startObject;
-    
+
 
     public int totalScore;
     //max904
@@ -52,11 +52,11 @@ public class GManager : MonoBehaviour
     }
     public void StageStart()
     {
-        
+
     }
     IEnumerator Starting()
     {
         yield return new WaitForSeconds(1.0f);
-        Instantiate(startObject, new Vector2(0,0), Quaternion.identity);
+        Instantiate(startObject, new Vector2(0, 0), Quaternion.identity);
     }
 }
