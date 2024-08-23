@@ -9,6 +9,7 @@ public class GManager : MonoBehaviour
 {
     public static GManager instance = null;
     [SerializeField] private GameObject startObject;
+    [SerializeField] private GameObject timerObject;
     
 
     public int totalScore;
@@ -50,13 +51,5 @@ public class GManager : MonoBehaviour
         BGMManager.Instance.Stop();
         BGMManager.Instance.Play(BGMPath.GAME_BGM);
     }
-    public void StageStart()
-    {
         
-    }
-    IEnumerator Starting()
-    {
-        yield return new WaitForSeconds(1.0f);
-        Instantiate(startObject, new Vector2(0,0), Quaternion.identity);
-    }
 }
